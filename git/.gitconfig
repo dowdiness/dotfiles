@@ -1,8 +1,11 @@
+[user]
+	name = Koji Ishimoto
+	email = koji.ishimoto@gmail.com
+
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
-[user]
-	name = koji
-	email = koji.ishimoto@gmail.com
+[color]
+	ui = always

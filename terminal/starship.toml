@@ -1,0 +1,26 @@
+# See this web page for configuration https://starship.rs/config
+
+[username]
+disabled = true
+
+[character]
+symbol = "➜"
+error_symbol = "✗"
+use_symbol_for_status = true
+
+[git_branch]
+symbol = "🌱 "
+truncation_length = "4"
+truncation_symbol = ""
+
+[git_status]
+conflicted = "🏳"
+ahead = "🏎💨"
+behind = "😰"
+diverged = "😵"
+untracked = "🤷‍"
+stashed = "📦"
+modified = "📝"
+staged = "➕"
+renamed = "👅"
+deleted = "🗑"
