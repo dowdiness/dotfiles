@@ -25,7 +25,7 @@ alias gpl='git pull'
 alias gps='git push'
 alias gpss='git push --set-upstream origin'
 alias gpsf='git push -f'
-alias gpso='git push origin'
+alias gpso='git push origin HEAD'
 alias ggr="git log --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %Cblue%cn %Cred%d %Creset%s'"
 alias glo="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gre='git rebase'
