@@ -1,5 +1,5 @@
 source "$HOME/.ghq/github.com/dowdiness/dotfiles/fish/common.fish"
-
+source "$HOME/.ghq/github.com/dowdiness/dotfiles/fish/path.fish"
 # initialize rbenv
 status --is-interactive; and source (rbenv init -|psub)
 
