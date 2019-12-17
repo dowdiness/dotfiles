@@ -4,6 +4,7 @@
 
 module.exports = {
   config: {
+    // plugin config
     hyperBorder: {
       borderColors: ['#fc1da7', '#fba506'],
       borderWidth: '4px',
@@ -21,18 +22,22 @@ module.exports = {
     },
     // hyper-pokemon ポケモンアバターをタブに表示する
     poketab: 'true',
+    pokemon: 'random',
+    unibody: 'true',
     // hyper-opacityプラグインの設定
     opacity: 0.95,
 
     // 範囲選択するとクリップボードにコピーされる
     copyOnSelect: true,
 
+    // main config
+
     // choose either `'stable'` for receiving highly polished,
     // or `'canary'` for less polished but more frequent updates
     updateChannel: 'stable',
 
     // default font size in pixels for all tabs
-    fontSize: 14,
+    fontSize: 16,
 
     // font family with optional fallbacks
     fontFamily: 'Source Han Code JP, Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
@@ -59,7 +64,7 @@ module.exports = {
     cursorShape: 'BLOCK',
 
     // set to `true` (without backticks and without quotes) for blinking cursor
-    cursorBlink: false,
+    cursorBlink: true,
 
     // color of the text
     foregroundColor: '#fff',
@@ -176,7 +181,7 @@ module.exports = {
     "hyper-pokemon",
     "hyperline",
     'hyper-blink',
-    "hyperborder"
+    "hyperborder",
   ],
 
   // in development, you can create a directory under

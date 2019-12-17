@@ -8,13 +8,15 @@
     "editor.fontWeight": "500",
     "editor.cursorStyle": "line",
     "editor.cursorWidth": 5,
-    "editor.cursorBlinking": "solid",
+    "editor.cursorBlinking": "smooth",
     // Very important: Install this plugin: https://github.com/be5invis/vscode-custom-css
     // you'll need to change this to an absolute path on your computer
     "vscode_custom_css.imports": [
         "/Volumes/Macintosh HD/Users/koji/.vscodestyles.css"
     ],
     "editor.renderWhitespace": "all",
+    "editor.renderLineHighlight": "all",
+    "editor.quickSuggestions": true,
     "window.zoomLevel": 0,
     "terminal.integrated.shell.osx": "/usr/local/bin/fish",
     "terminal.integrated.rendererType": "dom",
@@ -23,9 +25,9 @@
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "eslint.autoFixOnSave": true,
-    "prettier.requireConfig": true,
+    "editor.formatOnSave": false,
     "editor.rulers": [
-        100
+        120
     ],
     "editor.tabSize": 2,
     "editor.wordWrap": "on",
@@ -42,7 +44,7 @@
     "workbench.statusBar.visible": true,
     "explorer.confirmDelete": false,
     "workbench.colorCustomizations": {},
-    "sync.gist": "739c61b587bb15d60ec1dd5785b6a7ba",
+    "sync.gist": "06476cc356777aeb046e9cd534f33425",
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "solargraph.commandPath": "/Users/koji/.rbenv/shims/solargraph",
@@ -50,4 +52,112 @@
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+    "sync.forceUpload": true,
+    "todo-tree.general.statusBar": "tags",
+    "todo-tree.general.tags": [
+        "TODO",
+        "FIXME",
+        "HACK",
+        "NOTE",
+        "BUG"
+    ],
+    "todo-tree.tree.expanded": true,
+    "todo-tree.tree.flat": true,
+    "todo-tree.tree.grouped": true,
+    "todo-tree.tree.showCountsInTree": true,
+    "todo-tree.tree.showScanOpenFilesOrWorkspaceButton": true,
+    "todo-tree.highlights.defaultHighlight": {
+        "icon": "bell",
+        "type": "text",
+        "foreground": "#eaf4fc",
+    },
+    "todo-tree.highlights.customHighlight": {
+        "TODO": {
+            "icon": "check",
+            "type": "text",
+            "foreground": "magenta",
+            "background": "white",
+            "iconColour": "green",
+            "opacity": 10,
+        },
+        "FIXME": {
+            "icon": "alert",
+            "type": "text",
+            "foreground": "#d6c61b",
+            "background": "black",
+            "opacity": 10,
+        },
+        "HACK": {
+            "icon": "tools",
+            "type": "text",
+            "foreground": "magenta",
+            "background": "black",
+            "opacity": 10,
+        },
+        "NOTE": {
+            "icon": "comment",
+            "foreground": "cyan",
+            "background": "black",
+            "opacity": 10,
+        },
+        "BUG": {
+            "icon": "bug",
+            "type": "text",
+            "foreground": "#b70b0b",
+            "background": "black",
+            "opacity": 10,
+        },
+    },
+    "todo-tree.filtering.excludeGlobs": [
+        "!**/node_modules/**", "!**/.cache/**", "!**/public/**", "!**/dist/**"
+    ],
+    "jest.showCoverageOnLoad": true,
+    "gitProjectManager.baseProjectsFolders": [
+        "/Users/koji/.ghq"
+    ],
+    "gitProjectManager.storeRepositoriesBetweenSessions": true,
+    "gitProjectManager.ignoredFolders": [
+        "node_modules"
+    ],
+    "gitProjectManager.maxDepthRecursion": 3,
+    "gitProjectManager.checkRemoteOrigin": false,
+    "gitProjectManager.openInNewWindow": false,
+    "terminal.external.osxExec": "iTerm.app",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "files.exclude": {
+        "/.git": true,
+        "/.DS_Store": true,
+        "/node_modules": true,
+        "/node_modules/**": true
+    },
+    "search.exclude": {
+        "**/node_modules/**": true,
+    },
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/.rvm/**": true,
+        "**/node_modules/**": true,
+        "**/Library/**": true,
+        "**/GoogleDrive/**": true,
+        "**/Dropbox/**": true,
+        "**/.cocoapods/**": true,
+        "**/Pictures/**": true,
+    },
+    "typescript.tsc.autoDetect": "off",
+    "grunt.autoDetect": "off",
+    "jake.autoDetect": "off",
+    "npm.autoDetect": "off",
+    "gulp.autoDetect": "off",
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "eslint.packageManager": "yarn",
+    "eslint.validate": [
+        {"language": "javascript", "autoFix": true },
+        {"language": "javascriptreact", "autoFix": true },
+        {"language": "typescript", "autoFix": true },
+        {"language": "typescriptreact", "autoFix": true }
+    ],
+    "typescript.tsdk": "node_modules/typescript/lib"
 }
