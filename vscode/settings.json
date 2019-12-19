@@ -24,8 +24,6 @@
     "terminal.integrated.lineHeight": 1.1,
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
-    "eslint.autoFixOnSave": true,
-    "editor.formatOnSave": false,
     "editor.rulers": [
         120
     ],
@@ -153,11 +151,8 @@
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "eslint.packageManager": "yarn",
-    "eslint.validate": [
-        {"language": "javascript", "autoFix": true },
-        {"language": "javascriptreact", "autoFix": true },
-        {"language": "typescript", "autoFix": true },
-        {"language": "typescriptreact", "autoFix": true }
-    ],
-    "typescript.tsdk": "node_modules/typescript/lib"
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    }
 }
