@@ -151,8 +151,21 @@
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "eslint.packageManager": "yarn",
-    "typescript.tsdk": "node_modules/typescript/lib",
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
-    }
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[elm]": {
+        "editor.formatOnSave": true
+    },
+    "gitlens.views.search.files.layout": "list",
+    "gitlens.gitCommands.skipConfirmations": [
+        "fetch:command",
+        "stash-push:command",
+        "switch:command",
+        "pull:menu"
+    ],
+    "todo-tree.tree.showScanModeButton": true
 }
