@@ -1,0 +1,248 @@
+{
+    "workbench.colorTheme": "Cobalt2",
+    "editor.fontFamily": "Operator Mono, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontSize": 16,
+    "editor.lineHeight": 24,
+    "editor.letterSpacing": 0.5,
+    "files.trimTrailingWhitespace": true,
+    "editor.fontWeight": "500",
+    "editor.cursorStyle": "line",
+    "editor.cursorWidth": 5,
+    "editor.cursorBlinking": "smooth",
+    // Very important: Install this plugin: https://github.com/be5invis/vscode-custom-css
+    // you'll need to change this to an absolute path on your computer
+    "vscode_custom_css.imports": [
+        "/Volumes/Macintosh HD/Users/AntiSatori/.vscodestyles.css"
+    ],
+    "editor.renderWhitespace": "all",
+    "editor.renderLineHighlight": "all",
+    "editor.quickSuggestions": true,
+    "terminal.integrated.shell.osx": "/usr/local/bin/fish",
+    "terminal.integrated.rendererType": "dom",
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.lineHeight": 1.1,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "editor.rulers": [
+        120
+    ],
+    "editor.tabSize": 2,
+    "editor.wordWrap": "on",
+    "editor.copyWithSyntaxHighlighting": false,
+    "breadcrumbs.enabled": true,
+    "ruby.lint": {
+        "rubocop": true,
+        "ruby": true
+    },
+    "ruby.intellisense": "rubyLocate",
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.statusBar.visible": true,
+    "explorer.confirmDelete": false,
+    "sync.gist": "06476cc356777aeb046e9cd534f33425",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "solargraph.commandPath": "/Users/koji/.rbenv/shims/solargraph",
+    "gitlens.mode.active": "zen",
+    "[javascript]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true
+        },
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true
+        },
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[vue]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true
+        }
+    },
+    "eslint.packageManager": "yarn",
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "[typescript]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true
+        },
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "sync.forceUpload": true,
+    "todo-tree.general.statusBar": "tags",
+    "todo-tree.general.tags": [
+        "TODO",
+        "FIXME",
+        "HACK",
+        "NOTE",
+        "BUG"
+    ],
+    "todo-tree.tree.expanded": true,
+    "todo-tree.tree.flat": true,
+    "todo-tree.tree.grouped": true,
+    "todo-tree.tree.showCountsInTree": true,
+    "todo-tree.tree.showScanOpenFilesOrWorkspaceButton": true,
+    "todo-tree.highlights.defaultHighlight": {
+        "icon": "bell",
+        "type": "text",
+        "foreground": "#eaf4fc",
+    },
+    "todo-tree.highlights.customHighlight": {
+        "TODO": {
+            "icon": "check",
+            "type": "text",
+            "foreground": "magenta",
+            "background": "white",
+            "iconColour": "green",
+            "opacity": 10,
+        },
+        "FIXME": {
+            "icon": "alert",
+            "type": "text",
+            "foreground": "#d6c61b",
+            "background": "black",
+            "opacity": 10,
+        },
+        "HACK": {
+            "icon": "tools",
+            "type": "text",
+            "foreground": "magenta",
+            "background": "black",
+            "opacity": 10,
+        },
+        "NOTE": {
+            "icon": "comment",
+            "foreground": "cyan",
+            "background": "black",
+            "opacity": 10,
+        },
+        "BUG": {
+            "icon": "bug",
+            "type": "text",
+            "foreground": "#b70b0b",
+            "background": "black",
+            "opacity": 10,
+        },
+    },
+    "todo-tree.filtering.excludeGlobs": [
+        "!**/node_modules/**", "!**/.cache/**", "!**/public/**", "!**/dist/**"
+    ],
+    "jest.showCoverageOnLoad": true,
+    "gitProjectManager.baseProjectsFolders": [
+        "/Users/koji/ghq"
+    ],
+    "gitProjectManager.storeRepositoriesBetweenSessions": true,
+    "gitProjectManager.ignoredFolders": [
+        "node_modules"
+    ],
+    "gitProjectManager.maxDepthRecursion": 3,
+    "gitProjectManager.checkRemoteOrigin": false,
+    "gitProjectManager.openInNewWindow": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "files.exclude": {
+        "/.git": true,
+        "/.DS_Store": true,
+        "/node_modules": true,
+        "/node_modules/**": true
+    },
+    "search.exclude": {
+        "**/node_modules/**": true,
+    },
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/.rvm/**": true,
+        "**/node_modules/**": true,
+        "**/Library/**": true,
+        "**/GoogleDrive/**": true,
+        "**/Dropbox/**": true,
+        "**/.cocoapods/**": true,
+        "**/Pictures/**": true,
+    },
+    "typescript.tsc.autoDetect": "off",
+    "grunt.autoDetect": "off",
+    "jake.autoDetect": "off",
+    "npm.autoDetect": "off",
+    "gulp.autoDetect": "off",
+    "kite.showWelcomeNotificationOnStartup": false,
+    "purescript.addSpagoSources": true,
+    "purescript.addNpmPath": true,
+    "purescript.buildCommand": "spago build -u --json-errors",
+    "python.jediEnabled": false,
+    "files.associations": {
+        "*.tidal": "haskell"
+    },
+    "tidalcycles.sounds.paths": [
+        "/Users/Koji/Library/Application Support/SuperCollider/downloaded-quarks/Dirt-Samples"
+    ],
+    "tidalcycles.ghciPath" : "ghci",
+    "tidalcycles.feedbackColor": "rgba(100,250,100,0.5)",
+    "tidalcycles.codehelp.hover.level": "Full",
+    "tidalcycles.codehelp.completion.level" : "Full",
+    "[haskell]": {
+        "editor.defaultFormatter": "vigoo.stylish-haskell",
+        "editor.formatOnSave": true
+    },
+    "languageServerHaskell.hieExecutablePath": "~/.local/bin/hie-wrapper",
+    "languageServerHaskell.hieVariant": "haskell-ide-engine",
+    "stylishHaskell.runOnSave": true,
+    "languageServerHaskell.enableHIE": true,
+    "languageServerHaskell.hlintOn": true,
+    "editor.renderControlCharacters": false,
+    "workbench.activityBar.visible": true,
+    "vsicons.dontShowNewVersionMessage": true,
+    "rust-client.rustupPath": "/Users/Koji/.cargo/bin/rustup",
+    "FSharp.suggestSdkScripts": false,
+    "python.languageServer": "Default",
+    "gitlens.gitCommands.closeOnFocusOut": true,
+    // マークダウンに限定
+    "lpubsppop01.autoTimeStamp.filenamePattern": ".md",
+    // マークダウンに限定
+    "lpubsppop01.autoTimeStamp.lineLimit": 20,
+    // 'updated:' で始まる行
+    "lpubsppop01.autoTimeStamp.birthTimeStart": "^publishedAt:",
+    // 'updated:' で始まる行
+    "lpubsppop01.autoTimeStamp.modifiedTimeStart": "^updatedAt:",
+    // 日付フォーマット
+    "lpubsppop01.autoTimeStamp.momentFormat": " YYYY-MM-DDTHH:mm",
+    "editor.accessibilitySupport": "off",
+    "vim.easymotion": true,
+    "vim.visualstar": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.smartRelativeLine": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<leader>", "d"],
+            "after": ["d", "d"]
+        },
+        {
+            "before": ["<C-n>"],
+            "commands": [":nohl"]
+        }
+    ],
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false
+    },
+    "editor.lineNumbers": "interval",
+    "gitlens.advanced.messages": {
+        "suppressImproperWorkspaceCasingWarning": true
+    },
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "vim.disableExtension": true
+}

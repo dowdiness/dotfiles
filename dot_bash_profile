@@ -1,0 +1,48 @@
+HOMEBREW_PREFIX=$(brew --prefix)
+if type brew &>/dev/null; then
+  for COMPLETION in "$HOMEBREW_PREFIX"/etc/bash_completion.d/*
+  do
+    [[ -f $COMPLETION ]] && source "$COMPLETION"
+  done
+  if [[ -f ${HOMEBREW_PREFIX}/etc/profile.d/bash_completion.sh ]];
+  then
+    source "${HOMEBREW_PREFIX}/etc/profile.d/bash_completion.sh"
+  fi
+fi
+# Laravel path
+export PATH=~/.composer/vendor/bin:$PATH
+# AWS path
+export PATH=~/.local/bin:$PATH
+# MongoDB path
+export PATH=/Users/Koji/development/mongodb/bin:$PATH
+eval "$(nodenv init -)"
+source /Users/Koji/development/google-cloud-sdk/completion.bash.inc
+source /Users/Koji/development/google-cloud-sdk/path.bash.inc
+
+# added by Anaconda3 2019.03 installer
+# >>> conda init >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$(CONDA_REPORT_ERRORS=false '/anaconda3/bin/conda' shell.bash hook 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    \eval "$__conda_setup"
+else
+    if [ -f "/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/anaconda3/etc/profile.d/conda.sh"
+        CONDA_CHANGEPS1=false conda activate base
+    else
+        \export PATH="/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda init <<<
+eval "$(rbenv init -)"
+export PATH="~/.rbenv/shims:/usr/local/bin:$PATH"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/Koji/.sdkman"
+[[ -s "/Users/Koji/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/Koji/.sdkman/bin/sdkman-init.sh"
+if [ -e /Users/Koji/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/Koji/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+
+export PATH="$HOME/.cargo/bin:$PATH"
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"

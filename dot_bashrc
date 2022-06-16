@@ -1,0 +1,17 @@
+eval "$(direnv hook bash)"
+
+export PGDATA='/usr/local/var/postgres'
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[ -f /Users/Koji/.nodenv/versions/10.15.3/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.bash ] && . /Users/Koji/.nodenv/versions/10.15.3/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.bash
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[ -f /Users/Koji/.nodenv/versions/10.15.3/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.bash ] && . /Users/Koji/.nodenv/versions/10.15.3/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.bash
+# tabtab source for slss package
+# uninstall by removing these lines or running `tabtab uninstall slss`
+[ -f /Users/Koji/.nodenv/versions/10.15.3/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.bash ] && . /Users/Koji/.nodenv/versions/10.15.3/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.bash
+. $HOME/.ghcup/env
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
+export CURL_CA_BUNDLE="/usr/local/share/curl/cacert.pem"
