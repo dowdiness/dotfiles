@@ -1,40 +1,40 @@
 #git
-alias g="git"
-alias gbr='git branch'
-alias gbrd='git branch -d'
-alias gbra='git branch -a'
-alias gch='git checkout'
-alias gch-='git checkout -'
-alias gchb='git checkout -b'
-alias gsw='git switch'
-alias gswc='git switch -c'
-alias gswd='git switch develop'
-alias gswm='git switch master'
-alias gst='git status'
-alias gsh='git stash'
-alias gshp='git stash -p'
-alias gshpo='git stash pop'
-alias gshc="git stash clear"
-alias gshl='git stash list'
-alias gcm='git commit'
-alias gcma='git commit --amend'
-alias gad='git add'
-alias gada='git add .'
-alias gadp='git add -p'
-alias gpl='git pull'
-alias gps='git push'
-alias gpss='git push --set-upstream origin'
-alias gpsf='git push -f'
-alias gpso='git push origin HEAD'
-alias ggr="git log --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %Cblue%cn %Cred%d %Creset%s'"
-alias glo="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
-alias gre='git rebase'
-alias grei='git rebase -i'
-alias grec='git rebase --continue'
-alias grea='git rebase --abort'
-alias gred='git rebase develop'
-alias grem='git rebase master'
-alias gp='git remote prune origin'
-alias gchp='git cherry-pick'
+abbr -a g git
+abbr -a gbr git branch
+abbr -a gbrd git branch -d
+abbr -a gbra git branch -a
+abbr -a gch git checkout
+abbr -a gch- git checkout -
+abbr -a gchb git checkout -b
+abbr -a gsw git switch
+abbr -a gswc git switch -c
+abbr -a gswd git switch develop
+abbr -a gswm git switch master
+abbr -a gst git status
+abbr -a gsh git stash
+abbr -a gshp git stash -p
+abbr -a gshpo git stash pop
+abbr -a gshc "git stash clear"
+abbr -a gshl git stash list
+abbr -a gcm git commit
+abbr -a gcma git commit --amend
+abbr -a gad git add
+abbr -a gada git add .
+abbr -a gadp git add -p
+abbr -a gpl git pull
+abbr -a gps git push
+abbr -a gpss git push --set-upstream origin
+abbr -a gpsf git push -f
+abbr -a gpso git push origin HEAD
+abbr -a ggr "git log --graph --date short --decorate short --pretty format:%Cgreen%h %Creset%cd %Cblue%cn %Cred%d %Creset%s"
+abbr -a glo "git log --graph --pretty format:%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset --abbrev-commit"
+abbr -a gre git rebase
+abbr -a grei git rebase -i
+abbr -a grec git rebase --continue
+abbr -a grea git rebase --abort
+abbr -a gred git rebase develop
+abbr -a grem git rebase master
+abbr -a gp git remote prune origin
+abbr -a gchp git cherry-pick
 #emacs
-alias emacs='emacs -nw'
+abbr -a emacs emacs -nw

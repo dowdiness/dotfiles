@@ -8,6 +8,13 @@ if status is-interactive
     eval (/opt/homebrew/bin/brew shellenv)
     source "$HOME/ghq/github.com/dowdiness/dotfiles/fish/common.fish"
     source "$HOME/ghq/github.com/dowdiness/dotfiles/fish/path.fish"
+
+    ## Launch The Fuck
+    thefuck --alias | source
+    ## Launch zoxide
+    if type -q zoxide
+        zoxide init fish | source
+    end
     # initialize rbenv
     rbenv init - fish | source
 
@@ -32,16 +39,22 @@ if status is-interactive
     # path for hub
     set -x BROWSER open
 
-    # https://github.com/starship/starship init
-    eval (starship init fish)
-
     # The next line updates PATH for the Google Cloud SDK.
     if [ -f '/Users/AntiSatori/google-cloud-sdk/path.fish.inc' ]; . '/Users/AntiSatori/google-cloud-sdk/path.fish.inc'; end
     set -gx VOLTA_HOME "$HOME/.volta"
     set -gx PATH "$VOLTA_HOME/bin" $PATH
 
+    #peco setting
+    set fish_plugins theme peco
+
+    function fish_user_key_bindings
+        bind \cw peco_select_history
+    end
 
     # https://noknow.info/it/shell_script/tips/curl_ssl_certificate_probrem_60?lang=ja
     set -x CURL_CA_BUNDLE /usr/local/share/curl/cacert.pem
-    set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; set -gx PATH $HOME/.cabal/bin /Users/AntiSatori/.ghcup/bin $PATH # ghcup-env
+    # ghcup-env
+    set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; set -gx PATH $HOME/.cabal/bin /Users/AntiSatori/.ghcup/bin $PATH
+    # https://github.com/starship/starship init
+    # eval (starship init fish)
 end

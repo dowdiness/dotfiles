@@ -14,5 +14,9 @@ export PATH=/Users/Koji/development/mongodb/bin:$PATH
 
 # Curl
 export CURL_CA_BUNDLE=/usr/local/share/curl/cacert.pem
+# initialize zoxide
+eval "$(zoxide init zsh)"
+# fuck alias
+eval $(thefuck --alias fuck)
 # initialize Starship
 eval "$(starship init zsh)"
