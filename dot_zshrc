@@ -1,0 +1,18 @@
+# initialize rbenv
+eval "$(rbenv init - zsh)"
+# initialize nodenv
+eval "$(nodenv init -)"
+# Laravel path
+export PATH=~/.composer/vendor/bin:$PATH
+# AWS path
+export PATH=~/.local/bin:$PATH
+# MongoDB path
+export PATH=/Users/Koji/development/mongodb/bin:$PATH
+# For google-cloud-sdk
+# source /Users/Koji/development/google-cloud-sdk/completion.bash.inc
+# source /Users/Koji/development/google-cloud-sdk/path.bash.inc
+
+# Curl
+export CURL_CA_BUNDLE=/usr/local/share/curl/cacert.pem
+# initialize Starship
+eval "$(starship init zsh)"

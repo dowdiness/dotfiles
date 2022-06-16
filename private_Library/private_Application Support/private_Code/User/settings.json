@@ -1,6 +1,6 @@
 {
     "workbench.colorTheme": "Cobalt2",
-    "editor.fontFamily": "Operator Mono, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontFamily": "Source Code Pro for Powerline, Operator Mono, Menlo, Monaco, 'Courier New', monospace",
     "editor.fontSize": 16,
     "editor.lineHeight": 24,
     "editor.letterSpacing": 0.5,
@@ -12,13 +12,37 @@
     // Very important: Install this plugin: https://github.com/be5invis/vscode-custom-css
     // you'll need to change this to an absolute path on your computer
     "vscode_custom_css.imports": [
-        "/Volumes/Macintosh HD/Users/AntiSatori/.vscodestyles.css"
+        "/Volumes/Macintosh HD/Users/koji/.vscodestyles.css"
     ],
     "editor.renderWhitespace": "all",
     "editor.renderLineHighlight": "all",
-    "editor.quickSuggestions": true,
+    "editor.quickSuggestions": {
+        "comments": "on",
+        "strings": "on",
+        "other": "on"
+    },
     "terminal.integrated.shell.osx": "/usr/local/bin/fish",
-    "terminal.integrated.rendererType": "dom",
+    "terminal.integrated.profiles.osx": {
+        "bash": {
+            "path": "bash",
+            "args": ["-l"],
+            "icon": "terminal-bash"
+        },
+        "zsh": {
+            "path": "zsh",
+            "args": ["-l"]
+        },
+        "fish": {
+            "path": "fish",
+            "args": ["-l"]
+        },
+        "rosetta": {
+            "path": "arch",
+            "args": ["-x86_64", "zsh", "-l"],
+            "overrideName": true
+        }
+    },
+    "terminal.integrated.defaultProfile.osx": "fish",
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.lineHeight": 1.1,
     "files.insertFinalNewline": true,
@@ -81,9 +105,8 @@
     ],
     "todo-tree.tree.expanded": true,
     "todo-tree.tree.flat": true,
-    "todo-tree.tree.grouped": true,
     "todo-tree.tree.showCountsInTree": true,
-    "todo-tree.tree.showScanOpenFilesOrWorkspaceButton": true,
+    "todo-tree.tree.scanMode": "current file",
     "todo-tree.highlights.defaultHighlight": {
         "icon": "bell",
         "type": "text",
@@ -93,36 +116,36 @@
         "TODO": {
             "icon": "check",
             "type": "text",
-            "foreground": "magenta",
-            "background": "white",
-            "iconColour": "green",
+            "foreground": "#ff00ff",
+            "background": "#fff",
+            "iconColour": "#008000",
             "opacity": 10,
         },
         "FIXME": {
             "icon": "alert",
             "type": "text",
             "foreground": "#d6c61b",
-            "background": "black",
+            "background": "#000",
             "opacity": 10,
         },
         "HACK": {
             "icon": "tools",
             "type": "text",
-            "foreground": "magenta",
-            "background": "black",
+            "foreground": "#ff00ff",
+            "background": "#000",
             "opacity": 10,
         },
         "NOTE": {
             "icon": "comment",
-            "foreground": "cyan",
-            "background": "black",
+            "foreground": "#00FFFF",
+            "background": "#000",
             "opacity": 10,
         },
         "BUG": {
             "icon": "bug",
             "type": "text",
             "foreground": "#b70b0b",
-            "background": "black",
+            "background": "#000",
             "opacity": 10,
         },
     },
@@ -185,16 +208,11 @@
         "editor.defaultFormatter": "vigoo.stylish-haskell",
         "editor.formatOnSave": true
     },
-    "languageServerHaskell.hieExecutablePath": "~/.local/bin/hie-wrapper",
-    "languageServerHaskell.hieVariant": "haskell-ide-engine",
     "stylishHaskell.runOnSave": true,
-    "languageServerHaskell.enableHIE": true,
-    "languageServerHaskell.hlintOn": true,
     "editor.renderControlCharacters": false,
     "workbench.activityBar.visible": true,
     "vsicons.dontShowNewVersionMessage": true,
     "rust-client.rustupPath": "/Users/Koji/.cargo/bin/rustup",
-    "FSharp.suggestSdkScripts": false,
     "python.languageServer": "Default",
     "gitlens.gitCommands.closeOnFocusOut": true,
     // マークダウンに限定
@@ -237,11 +255,8 @@
         "<C-f>": false
     },
     "editor.lineNumbers": "interval",
-    "gitlens.advanced.messages": {
-        "suppressImproperWorkspaceCasingWarning": true
-    },
     "workbench.editorAssociations": {
-        "*.ipynb": "jupyter.notebook.ipynb"
+        "*.ipynb": "jupyter-notebook"
     },
     "security.workspace.trust.untrustedFiles": "open",
     "vim.disableExtension": true
