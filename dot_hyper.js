@@ -40,7 +40,7 @@ module.exports = {
     fontSize: 16,
 
     // font family with optional fallbacks
-    fontFamily: 'Source Code Pro for Powerline, Source Han Code JP, Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+    fontFamily: 'HackGen35Nerd Console, Source Han Code JP, Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
 
     // default font weight: 'normal' or 'bold'
     fontWeight: 'normal',

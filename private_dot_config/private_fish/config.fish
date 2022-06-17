@@ -2,12 +2,13 @@
 set -g theme_display_date yes
 set -g theme_date_format "+%F %H:%M"
 set -g theme_display_git_default_branch yes
+set -g theme_nerd_fonts yes
 set -g theme_color_scheme dark
 
 if status is-interactive
     eval (/opt/homebrew/bin/brew shellenv)
-    source "$HOME/ghq/github.com/dowdiness/dotfiles/fish/common.fish"
-    source "$HOME/ghq/github.com/dowdiness/dotfiles/fish/path.fish"
+    source "$HOME/.config/fish/common.fish"
+    source "$HOME/.config/fish/path.fish"
 
     ## Launch The Fuck
     thefuck --alias | source
@@ -46,6 +47,7 @@ if status is-interactive
 
     #peco setting
     set fish_plugins theme peco
+    set GHQ_SELECTOR peco
 
     function fish_user_key_bindings
         bind \cw peco_select_history
