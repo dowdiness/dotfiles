@@ -54,6 +54,7 @@ abbr ltl 'exa -T -L 3 -a -I "node_modules|.git|.cache" -l --icons'
 # yarn && npm
 abbr y 'yarn'
 abbr yd 'yarn dev'
+abbr y 'yarn upgrade-interactive --latest'
 abbr n 'npm'
 abbr nd 'npm dev'
 # bundle
